@@ -32,9 +32,10 @@ body{
 }
 
 #img-div img{
-    width: 100%;
-    max-width: 1024px;
+    max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 #tribute-info{
