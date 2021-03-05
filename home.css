@@ -1,0 +1,14 @@
+body{
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:slategray;
+    font-size: 2rem;
+}
+
+a{
+    color:yellowgreen;
+    text-decoration: none;
+}
