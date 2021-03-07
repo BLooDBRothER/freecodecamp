@@ -65,10 +65,15 @@ input:focus{
 #name, #email, #number, #dropdown, #submit{
     width: 100%;
     height: 30px;
-    padding: 0;
     border: 0;
     border-radius: .2rem;
-    padding: 0 0 0 .5rem;
+    padding: 0;
+}
+
+button{
+    background-color: yellow;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 .wrap{
