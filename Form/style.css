@@ -107,3 +107,19 @@ label{
         width: 200px;
     }
 }
+@media (max-width:300px){
+    h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .container{
+        min-width: 200px;
+    }
+    form{
+        width: 100px;
+    }
+}
