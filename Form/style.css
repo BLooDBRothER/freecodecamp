@@ -1,0 +1,109 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    -ms-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box; 
+    box-sizing:content-box;
+    color: white;
+    margin: 5rem 0;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+body::before{
+    content: '';
+    background: rgba(27, 27, 50, 0.8);
+    background-image: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      ),url('https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg');
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.container{
+    background: rgba(43, 39, 69, .7);
+    min-width: 700px;
+    backdrop-filter: blur(2rem);
+    margin: 0 auto;
+}
+
+form{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 600px;
+    margin: 2rem auto;
+    
+}
+
+input:focus{
+    outline: none;
+}
+
+#name, #email, #number, #dropdown, #submit{
+    width: 100%;
+    height: 30px;
+    padding: 0;
+    border: 0;
+    border-radius: .2rem;
+    padding: 0 0 0 .5rem;
+}
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:1.5rem;
+    width: 100%;
+} 
+
+label{
+    padding-bottom: .5rem;
+}
+
+
+@media (max-width:870px){
+    .container{
+        min-width: 500px;
+    }
+    form{
+        width: 400px;
+    }
+}
+@media (max-width:550px){
+    h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .container{
+        min-width: 300px;
+    }
+    form{
+        width: 200px;
+    }
+}
