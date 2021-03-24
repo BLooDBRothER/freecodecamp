@@ -1,4 +1,395 @@
 body{
     box-sizing: border-box;
     margin: 0;
+    background-color: black;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* ---------------------------------------------Navbar Start------------------------------------------------ */ 
+  
+
+#header{
+    background-color: grey;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    z-index: 1;
+}
+
+#header #logo{
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 2rem;
+}
+
+#header #header-img{
+    height: 30px;
+    width: 30px;
+    margin: 0 1rem 0 0;
+}
+
+#header #nav-bar{
+    display: flex;
+    margin: 0 2rem 0 0;
+}
+
+#header #nav-bar .nav-link{
+    margin: 0 0 0 3rem;
+}
+
+
+/* ---------------------------------------------Navbar End------------------------------------------------ */
+
+/* ---------------------------------------------Features Start------------------------------------------------ */
+
+#features{
+    margin: 0 auto;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+#features .feature{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#features .feature:not(:nth-child(3)){
+    border-bottom: 2px wheat solid;
+}
+
+#features .feature .icon{
+    margin: 0 2rem;
+    width: fit-content;
+    color: yellow;
+}
+
+#features .feature .icon i{
+    font-size: 1.8rem;
+    width: 40px;
+    height: 32px;
+    text-align: center;
+}
+
+#features .feature .exp{
+    padding: 0 .5rem 0 0;
+}
+
+/* ---------------------------------------------Features End------------------------------------------------ */
+
+/* ---------------------------------------------Video Start------------------------------------------------ */
+
+#vid-cnt{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+#vid-cnt #video{
+    width: 560px;
+    height: 315px;
+}
+
+/* ---------------------------------------------Video End------------------------------------------------ */
+
+/* ---------------------------------------------Pricing Start------------------------------------------------ */
+
+.pricing{
+    color: white;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.pri-list{
+    margin: 0 auto;
+    background: white;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.dt-cnt{
+    margin: 0 auto;
+    width: 100%;
+    background-color: gray;
+}
+
+.dt-cnt h3{
+    text-align: center; 
+}
+
+.dt-cnt .drp{
+    text-align: center;
+}
+
+.dt-cnt #size, #size2, #size3{
+    width: 50%; 
+    margin: 0 auto;
+}
+
+.dt-cnt #size .bg-clr{
+    background-color: black;
+}
+
+.dt-cnt #size:hover{
+    outline: none;
+    border: none;
+    color: red;
+    background-color: rebeccapurple;
+}
+
+#price, #price2, #price3{
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.graph{
+    margin-top: .7rem;
+}
+
+.graph .speed-g, .size-g{
+    margin: 0 0 .5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.graph .gname{
+    width: 60px;
+}
+
+.graph .bar-sp, .bar-si{
+    background-color: black;
+    margin-left: .2rem;
+    width: 200px;
+    border-radius: 1.5rem;
+    height: 20px;
+    position: relative;
+}
+
+
+.pri-list:nth-child(1) .graph .speed-g .bar-sp::after{
+    content: "";
+    height: 100%;
+    width: 30%;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    border-radius: 1.5rem 0 0 1.5rem;
+    position: absolute;
+}
+.pri-list:nth-child(1) .graph .size-g .bar-si::after{
+    content: "";
+    height: 100%;
+    width: 30%;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    border-radius: 1.5rem 0 0 1.5rem;
+    position: absolute;
+}
+.pri-list:nth-child(2) .graph .speed-g .bar-sp::after{
+    content: "";
+    height: 100%;
+    width: 65%;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    border-radius: 1.5rem 0 0 1.5rem;
+    position: absolute;
+}
+.pri-list:nth-child(2) .graph .size-g .bar-si::after{
+    content: "";
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    border-radius: 1.5rem 0 0 1.5rem;
+    position: absolute;
+}
+.pri-list:nth-child(3) .graph .speed-g .bar-sp::after{
+    content: "";
+    height: 100%;
+    width: 80%;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    border-radius: 1.5rem 0 0 1.5rem;
+    position: absolute;
+}
+.pri-list:nth-child(3) .graph .size-g .bar-si::after{
+    content: "";
+    height: 100%;
+    width: 80%;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    border-radius: 1.5rem 0 0 1.5rem;
+    position: absolute;
+}
+
+/* ---------------------------------------------Pricing End------------------------------------------------ */
+
+/* ---------------------------------------------Foooter Start------------------------------------------------ */
+
+.footer{
+    background-color: wheat;
+    color: black;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form-cont{
+    display: flex;
+    justify-content: center;
+}
+
+.form-cont form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-cont form  #email{
+    outline: none;
+    background-color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    color: black;
+    border: none;
+    padding: .2rem;
+    border-bottom: .3rem rebeccapurple solid;
+    margin: 0 0 1rem 0;
+}
+
+.form-cont form  #submit{
+    outline: none;
+    background-color: rebeccapurple;
+    font-weight: bold;
+    font-size: 1rem;
+    color: red;
+    border: none;
+    padding: .2rem;
+    margin: 0 0 1rem 0;
+    width: 80px;
+    cursor: pointer;
+}
+
+.footer .footer-caption{
+    font-size: 1.5rem;
+}
+
+.footer .footer-caption a{
+    font-size: 2rem;
+    color: rebeccapurple;
+}
+
+/* ---------------------------------------------Form End------------------------------------------------ */
+
+@media (max-width: 1100px){
+    .pricing{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing .pri-list{
+        margin: 2rem auto;
+    }
+
+    .pricing .pri-list:nth-child(3){
+        grid-column: 1 / span 2;
+    }
+}
+
+@media (max-width: 750px){
+    #header{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #header #logo{
+        margin: 1rem 0;
+    }
+
+    #header #logo h1{
+        margin: 0;
+    }
+
+    #header #nav-bar{
+        margin: 1rem 0;
+    }
+
+    #features{
+        margin: 10rem 0 2rem 0 ;
+    }
+
+    #vid-cnt #video{
+        width: 440px;
+        height: 280px;
+    }
+
+    .pricing{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pricing .pri-list:nth-child(3){
+        grid-column: auto;
+    }
+
+}
+
+@media (max-width: 550px){
+    #header{
+        position: relative;
+    }
+
+    #header #nav-bar{
+        flex-direction: column;
+    }
+
+    #header #nav-bar .nav-link:nth-child(3){
+        margin: 0 !important;
+    }
+
+    #header #nav-bar .nav-link:not(:nth-child(3)){
+        margin: 0 0 1rem 0 !important;
+    }
+   
+    #features{
+        margin: 1.5rem 0 ;
+    }
+
+    #vid-cnt #video{
+        width: 310px;
+        height: 180px;
+    }
+    .footer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 380px){
+    #vid-cnt #video{
+        width: 280px;
+        height: 150px;
+    }
+
+    .pri-list{
+        width: 250px;
+    }
 }
