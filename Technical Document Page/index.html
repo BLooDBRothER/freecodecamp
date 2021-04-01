@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Kotlin</title>
+  </head>
+  <body>
+      <header class="primary-header">
+        <div class="logo">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            role="img"
+            aria-labelledby="LogoTextTitle"
+            class="kt-header__logo"
+            title="Kotlin"      
+        >
+            <path
+            fill="url(#paint0_linear)"
+            d="M9.062 1.009L0 10.539v8.52l9.05-9.066 9-8.985H9.062z"
+            ></path>
+            <path
+            fill="url(#paint1_linear)"
+            d="M9.05 9.993l9 9.065H0l9.049-9.065z"
+            ></path>
+            <path
+            fill="url(#paint2_linear)"
+            d="M9.062 1.009L0 10.539v-9.53h9.062z"
+            ></path>
+            <defs id="defs3005">
+            <linearGradient
+                id="paint0_linear"
+                x1="5.359"
+                x2="22.155"
+                y1="28.002"
+                y2="11.206"
+                gradientTransform="translate(0 -2)"
+                gradientUnits="userSpaceOnUse"
+            >
+                <stop id="stop3008" offset="0.108" stop-color="#C757BC"></stop>
+                <stop id="stop3010" offset="0.173" stop-color="#CD5CA9"></stop>
+                <stop id="stop3012" offset="0.492" stop-color="#E8744F"></stop>
+                <stop id="stop3014" offset="0.716" stop-color="#F88316"></stop>
+                <stop id="stop3016" offset="0.823" stop-color="#FF8900"></stop>
+            </linearGradient>
+            <linearGradient
+                id="paint1_linear"
+                x1="13.922"
+                x2="15.634"
+                y1="23.342"
+                y2="16.553"
+                gradientTransform="translate(0 -2)"
+                gradientUnits="userSpaceOnUse"
+            >
+                <stop id="stop3019" offset="0" stop-color="#00AFFF"></stop>
+                <stop id="stop3021" offset="0.556" stop-color="#5282FF"></stop>
+                <stop id="stop3023" offset="1" stop-color="#945DFF"></stop>
+            </linearGradient>
+            <linearGradient
+                id="paint2_linear"
+                x1="6.791"
+                x2="13.29"
+                y1="16.696"
+                y2="11.376"
+                gradientTransform="translate(0 -2)"
+                gradientUnits="userSpaceOnUse"
+            >
+                <stop id="stop3026" offset="0" stop-color="#00AFFF"></stop>
+                <stop id="stop3028" offset="0.556" stop-color="#5282FF"></stop>
+                <stop id="stop3030" offset="1" stop-color="#945DFF"></stop>
+            </linearGradient>
+            </defs>
+            </svg>
+            <h1>Kotlin<sup>v1.43.2</sup></h1>
+        </div>
+      </header>
+
+      <nav id="navbar">
+          <header id="header">
+              <h1>Kotlin Basics</h1>
+          </header>
+          <div class="nav-links">
+              <a href="#Package_definition_and_imports" class="nav-link">Package definition and imports</a>
+              <a href="#Program_entry_point" class="nav-link">Program entry point</a>
+              <a href="#Print_to_the_standard_output" class="nav-link">Print to the standard output</a>
+              <a href="#Functions" class="nav-link">Functions</a>
+              <a href="#Variables" class="nav-link">Variables</a>
+              <a href="#" class="nav-link">Creating classes and instances</a>
+              <a href="#" class="nav-link">Comments</a>
+              <a href="#" class="nav-link">String templates</a>
+              <a href="#" class="nav-link">Conditional expression</a>
+              <a href="#" class="nav-link">For loop</a>
+              <a href="#" class="nav-link">While loop</a>
+              <a href="#" class="nav-link">When expression</a>
+              <a href="#" class="nav-link">Ranges</a>
+              <a href="#" class="nav-link">Collections</a>
+              <a href="#" class="nav-link">Nullable values and null checks</a>
+              <a href="#" class="nav-link">Type Check and automatic casts</a>
+          </div>
+      </nav>
+
+      <main id="main-doc">
+          <section class="main-section" id="Package_definition_and_imports">
+              <header class="sec-header">
+                  <h1>Package definition and imports</h1>
+              </header>
+              <p>Package specification should be at the top of the source file.</p>
+              <code>
+                <pre>
+package my.demo
+
+import kotlin.text.*
+        
+// ...</pre>
+              </code>
+              <p>It is not required to match directories and packages: source files can be placed arbitrarily in the file system.</p>
+              <p>Refer here to see more about <a href="https://kotlinlang.org/docs/packages.html" target="_blank">Packages</a></p>
+          </section>
+          <section class="main-section" id="Program_entry_point">
+            <header class="sec-header">
+                <h1>Program entry point</h1>
+            </header>
+            <p>An entry point of a Kotlin application is the <span>main</span> function.</p>
+            <code>
+                <pre>
+fun main() {
+    println("Hello world!")
+}</pre>
+            </code>
+            <p>Another form of <span>main</span> accepts a variable number of <span>String</span> arguments.</p>
+            <code>
+                <pre>
+fun main(args: Array&lt;String&gt;) {
+    println(args.contentToString())
+}</pre>
+            </code>
+        </section>
+        <section class="main-section" id="Print_to_the_standard_output">
+            <header class="sec-header">
+                <h1>Print to the standard output</h1>
+            </header>
+            <p><span>print</span> prints its argument to the standard output.</p>
+            <code>
+                <pre>
+fun main() {
+    print("Hello ")
+    print("world!")
+}</pre>
+            </code>
+            <p><span>println</span> prints its arguments and adds a line break, so that the next thing you print appears on the next line.</p>
+            <code>
+                <pre>
+fun main() {
+    println("Hello world!")
+    println(42)
+}</pre>
+            </code>
+        </section>
+        <section class="main-section" id="Functions">
+            <header class="sec-header">
+                <h1>Functions</h1>
+            </header>
+            <p>A function with two <span>Int</span> parameters and <span>Int</span> return type.</p>
+            <code>
+                <pre>
+fun sum(a: Int, b: Int): Int {
+    return a + b
+}
+
+fun main() {
+    print("sum of 3 and 5 is ")
+    println(sum(3, 5))
+}</pre>
+            </code>
+            <p>A function body can be an expression. Its return type is inferred.</p>
+            <code>
+            <pre>
+fun sum(a: Int, b: Int) = a + b
+
+fun main() {
+    println("sum of 19 and 23 is ${sum(19, 23)}")
+}</pre>
+            </code>
+            <p>A function that returns no meaningful value.</p>
+            <code>
+            <pre>
+fun printSum(a: Int, b: Int): Unit {
+    println("sum of $a and $b is ${a + b}")
+}
+
+fun main() {
+    printSum(-1, 8)
+}</pre>
+            </code>
+            <p><span>Unit</span> return type can be omitted.</p>
+            <code>
+                <pre>
+fun printSum(a: Int, b: Int) {
+    println("sum of $a and $b is ${a + b}")
+}
+
+fun main() {
+    printSum(-1, 8)
+}</pre>
+            </code>
+            <p>Refer here to see more about <a href="https://kotlinlang.org/docs/functions.html" target="_blank">Functions</a></p>
+        </section>
+        <section class="main-section" id="Variables">
+            <header class="sec-header">
+                <h1>Variables</h1>
+            </header>
+            <p>Read-only local variables are defined using the keyword <span>val</span>. They can be assigned a value only once.</p>
+            <code>
+                <pre>
+fun main() {
+    val a: Int = 1  // immediate assignment
+    val b = 2   // `Int` type is inferred
+    val c: Int  // Type required when no initializer is provided
+    c = 3       // deferred assignment
+    println("a = $a, b = $b, c = $c")
+}</pre>
+            </code>
+            <p>Variables that can be reassigned use the <span>var</span> keyword.</p>
+            <code>
+            <pre>
+fun main() {
+    var x = 5 // `Int` type is inferred
+    x += 1
+    println("x = $x")
+}</pre>
+            </code>
+            <p>You can declare variables at the top level.</p>
+            <code>
+            <pre>
+val PI = 3.14
+var x = 0
+
+fun incrementX() { 
+    x += 1 
+}
+
+fun main() {
+    println("x = $x; PI = $PI")
+    incrementX()
+    println("incrementX()")
+    println("x = $x; PI = $PI")
+}</pre>
+            </code>
+            <p>Refer here to see more about <a href="https://kotlinlang.org/docs/properties.html" target="_blank">Properties</a></p>          
+        </section>
+      </main>
+
+  </body>
+</html>

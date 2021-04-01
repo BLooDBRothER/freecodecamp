@@ -1,0 +1,226 @@
+/* ----------------------------------------Global Start-----------------------------------*/
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #001d3d;
+    color: #ee6c4d;
+    overflow-x: hidden;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ----------------------------------------Global End-----------------------------------*/
+
+/* ----------------------------------------Header Start-----------------------------------*/
+
+.primary-header{
+    background-color: #14213d;
+    color: #f77f00;
+    height: 70px;
+    padding: 1rem 2rem;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.primary-header .logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.primary-header svg{
+    width: 35px;
+    height: 35px;
+}
+
+.primary-header .logo h1{
+    font-size: 2rem;
+    padding: 0 0 0 .5rem;
+}
+
+.primary-header .logo h1 sup{
+    font-size: .8rem;
+}
+
+/* ----------------------------------------Header End-----------------------------------*/
+
+/* ----------------------------------------Navbar Start-----------------------------------*/
+
+/* width */
+#navbar::-webkit-scrollbar {
+    width: 5px;
+}
+  
+  /* Track */
+#navbar::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+  /* Handle */
+#navbar::-webkit-scrollbar-thumb {
+    background: #f77f00; 
+}
+  
+  /* Handle on hover */
+#navbar::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+#navbar{
+    background-color: #14213d;
+    color: #f77f00;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    padding: 0 0 5rem 0.4rem;
+    margin: 70px 0 0 0;
+}
+
+#navbar:hover{
+    overflow: auto;
+}
+
+#navbar #header{
+    margin: 1.5rem 0;
+    font-size: 1.8rem;
+}
+
+#navbar .nav-links{
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar .nav-links .nav-link{
+    font-size: 1.2rem;
+    color: aqua;
+    padding: 1.3rem 0;
+    border-bottom: solid 1px wheat;
+}
+
+#navbar .nav-links .nav-link:hover{
+    background-color: #d62828;
+    color: #eae2b7;
+    font-weight: bold;
+}
+
+/* ----------------------------------------Navbar End-----------------------------------*/
+
+/* ----------------------------------------Main Start-----------------------------------*/
+
+#main-doc{
+    margin: 75px 20px 0 320px;
+    font-size: 1.2rem;
+}
+
+#main-doc .main-section{
+    padding: 2rem 0 2rem 0;
+    border-bottom: 5px dotted #ef476f;
+}
+
+#main-doc code, p{
+    margin-left: .5rem;
+} 
+
+#main-doc header{
+    color: #f77f00;
+    margin: 0 0 1.5rem 0;
+    font-size: 1.8rem;
+}
+
+code{
+    margin: 2rem 0;
+    display: block;
+    white-space: pre-wrap;
+    background-color: #a2d2ff;
+    font-weight: bold;
+    color: #240046;
+}
+
+code pre{
+    margin: 0 0 0 2rem;
+}
+
+#main-doc p{
+  line-height: 2rem;  
+}
+
+#main-doc p span{
+    background-color: #f77f00;
+    color: #14213d;
+    border-radius: .2rem;
+    padding: .1rem .2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#main-doc p a{
+    background-color: aqua;
+    color: #000000;
+    font-weight: bold;
+    padding: .1rem;
+}
+
+/* ----------------------------------------Main End-------------------------------------*/
+
+
+/* ----------------------------------------Media query Start-----------------------------------*/
+
+@media(max-width:1000px){
+    #navbar{
+        width: 100%;
+        height: 290px;
+        position: relative;
+        overflow: auto;
+        padding: 0 0 .5rem 1rem;
+        margin: 70px 0 0 0;
+    }
+
+    #main-doc{
+        margin: 1.5rem 1.2rem;
+    }
+
+    code pre{
+        margin: 0 0 0 2rem;
+    }
+}
+
+@media(max-width:500px){
+    html, body{
+        overflow-x: hidden !important;
+    }
+    #navbar{
+        margin: 0;
+    }
+    .primary-header{
+        position: relative;
+    }
+
+    code{
+        overflow-x: auto;
+    }
+
+    code pre{
+        width: fit-content;
+        margin: 0 .2rem;
+    }
+}
+
+/* ----------------------------------------Media query Start-----------------------------------*/
