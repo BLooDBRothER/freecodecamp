@@ -12,6 +12,10 @@ body{
     color: #ee6c4d;
 }
 
+ul, ol, li{
+    overflow: unset;
+}
+
 h1{
     margin: 0;
     padding: 0;
@@ -145,7 +149,44 @@ a{
     
 }
 
-#main-doc code, p{
+#main-doc ul{
+    margin: 0 0 0 2rem;
+}
+
+#main-doc ul li ol{
+    margin: 0 0 0 2rem;
+    
+}
+
+#main-doc ul li ol li{
+    color: #ee6c4d;
+}
+
+#main-doc ul li ol li div{
+    overflow-x: auto;
+}
+
+#main-doc ul li ol li span{
+    background-color: #f77f00;
+    color: #14213d;
+    border-radius: .2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 0 .5rem;
+    white-space: nowrap;
+}
+
+#main-doc ul li{
+    padding: 1rem 0;
+    font-weight: bold;
+    color: #f77f00;
+}
+
+#main-doc ul li .ins{
+    padding: 0.5rem 2rem;
+}
+
+#main-doc code, p, ul{
     margin-left: .5rem;
 } 
 
