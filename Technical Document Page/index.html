@@ -88,43 +88,45 @@
               <a href="#Print_to_the_standard_output" class="nav-link">Print to the standard output</a>
               <a href="#Functions" class="nav-link">Functions</a>
               <a href="#Variables" class="nav-link">Variables</a>
-              <a href="#" class="nav-link">Creating classes and instances</a>
-              <a href="#" class="nav-link">Comments</a>
-              <a href="#" class="nav-link">String templates</a>
-              <a href="#" class="nav-link">Conditional expression</a>
-              <a href="#" class="nav-link">For loop</a>
-              <a href="#" class="nav-link">While loop</a>
-              <a href="#" class="nav-link">When expression</a>
-              <a href="#" class="nav-link">Ranges</a>
-              <a href="#" class="nav-link">Collections</a>
-              <a href="#" class="nav-link">Nullable values and null checks</a>
-              <a href="#" class="nav-link">Type Check and automatic casts</a>
+              <a href="#Creating_classes_and_instances" class="nav-link">Creating classes and instances</a>
+              <a href="#Comments" class="nav-link">Comments</a>
+              <a href="#String_templates" class="nav-link">String templates</a>
+              <a href="#Conditional_expression" class="nav-link">Conditional expression</a>
+              <a href="#For_loop" class="nav-link">For loop</a>
+              <a href="#While_loop" class="nav-link">While loop</a>
+              <a href="#When_expression" class="nav-link">When expression</a>
+              <a href="#Ranges" class="nav-link">Ranges</a>
+              <a href="#Collections" class="nav-link">Collections</a>
+              <a href="#Nullable_values_and_null_checks" class="nav-link">Nullable values and null checks</a>
+              <a href="#Type_Check_and_automatic_casts" class="nav-link">Type Check and automatic casts</a>
           </div>
       </nav>
 
       <main id="main-doc">
-          <section class="main-section" id="Package_definition_and_imports">
-              <header class="sec-header">
-                  <h1>Package definition and imports</h1>
-              </header>
-              <p>Package specification should be at the top of the source file.</p>
-              <code>
+        <section class="main-section" id="Package_definition_and_imports">
+            <header class="sec-header">
+                <h1>Package definition and imports</h1>
+            </header>
+            <p>Package specification should be at the top of the source file.</p>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
                 <pre>
 package my.demo
 
 import kotlin.text.*
-        
+    
 // ...</pre>
-              </code>
-              <p>It is not required to match directories and packages: source files can be placed arbitrarily in the file system.</p>
-              <p>Refer here to see more about <a href="https://kotlinlang.org/docs/packages.html" target="_blank">Packages</a></p>
-          </section>
-          <section class="main-section" id="Program_entry_point">
+            </code>
+            <p>It is not required to match directories and packages: source files can be placed arbitrarily in the file system.</p>
+            <p>Refer here to see more about <a href="https://kotlinlang.org/docs/packages.html" target="_blank">Packages</a></p>
+        </section>
+        <section class="main-section" id="Program_entry_point">
             <header class="sec-header">
                 <h1>Program entry point</h1>
             </header>
             <p>An entry point of a Kotlin application is the <span>main</span> function.</p>
             <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
                 <pre>
 fun main() {
     println("Hello world!")
@@ -132,6 +134,7 @@ fun main() {
             </code>
             <p>Another form of <span>main</span> accepts a variable number of <span>String</span> arguments.</p>
             <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
                 <pre>
 fun main(args: Array&lt;String&gt;) {
     println(args.contentToString())
@@ -144,6 +147,7 @@ fun main(args: Array&lt;String&gt;) {
             </header>
             <p><span>print</span> prints its argument to the standard output.</p>
             <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
                 <pre>
 fun main() {
     print("Hello ")
@@ -152,6 +156,7 @@ fun main() {
             </code>
             <p><span>println</span> prints its arguments and adds a line break, so that the next thing you print appears on the next line.</p>
             <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
                 <pre>
 fun main() {
     println("Hello world!")
@@ -165,6 +170,7 @@ fun main() {
             </header>
             <p>A function with two <span>Int</span> parameters and <span>Int</span> return type.</p>
             <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
                 <pre>
 fun sum(a: Int, b: Int): Int {
     return a + b
@@ -177,7 +183,8 @@ fun main() {
             </code>
             <p>A function body can be an expression. Its return type is inferred.</p>
             <code>
-            <pre>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
 fun sum(a: Int, b: Int) = a + b
 
 fun main() {
@@ -186,7 +193,8 @@ fun main() {
             </code>
             <p>A function that returns no meaningful value.</p>
             <code>
-            <pre>
+                 <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
 fun printSum(a: Int, b: Int): Unit {
     println("sum of $a and $b is ${a + b}")
 }
@@ -197,6 +205,7 @@ fun main() {
             </code>
             <p><span>Unit</span> return type can be omitted.</p>
             <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
                 <pre>
 fun printSum(a: Int, b: Int) {
     println("sum of $a and $b is ${a + b}")
@@ -214,6 +223,7 @@ fun main() {
             </header>
             <p>Read-only local variables are defined using the keyword <span>val</span>. They can be assigned a value only once.</p>
             <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
                 <pre>
 fun main() {
     val a: Int = 1  // immediate assignment
@@ -225,7 +235,8 @@ fun main() {
             </code>
             <p>Variables that can be reassigned use the <span>var</span> keyword.</p>
             <code>
-            <pre>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
 fun main() {
     var x = 5 // `Int` type is inferred
     x += 1
@@ -234,7 +245,8 @@ fun main() {
             </code>
             <p>You can declare variables at the top level.</p>
             <code>
-            <pre>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
 val PI = 3.14
 var x = 0
 
@@ -250,6 +262,441 @@ fun main() {
 }</pre>
             </code>
             <p>Refer here to see more about <a href="https://kotlinlang.org/docs/properties.html" target="_blank">Properties</a></p>          
+        </section>
+        <section class="main-section" id="Creating_classes_and_instances">
+            <header class="sec-header">
+                <h1>Creating classes and instances</h1>
+            </header>
+            <p>To define a <span>class</span>, use the class keyword.</p>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+class Shape</pre>
+            </code>
+            <p>Properties of a class can be listed in its declaration or body.</p>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+class Rectangle(var height: Double, var length: Double) {
+    var perimeter = (height + length) * 2
+}</pre>
+            </code>
+            <p>The default constructor with parameters listed in the class declaration is available automatically.</p>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+class Rectangle(var height: Double, var length: Double) {
+    var perimeter = (height + length) * 2 
+}
+fun main() {
+    val rectangle = Rectangle(5.0, 2.0)
+    println("The perimeter is ${rectangle.perimeter}")
+}</pre>
+            </code>
+            <p>Inheritance between classes is declared by a colon ( <span>:</span> ). Classes are final by default; to make a class inheritable, mark it as <span>open</span>.</p>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+open class Shape
+
+class Rectangle(var height: Double, var length: Double): Shape {
+    var perimeter = (height + length) * 2
+}</pre>
+            </code>
+            <p>Refer here to see more about <a href="https://kotlinlang.org/docs/classes.html" target="_blank">classes</a> and <a href="https://kotlinlang.org/docs/object-declarations.html" target="_blank">objects and instances</a></p>          
+        </section>
+        <section class="main-section" id="Comments">
+            <header class="sec-header">
+                <h1>Comments</h1>
+            </header>
+            <p>Just like most modern languages, Kotlin supports single-line (or end-of-line) and multi-line (block) comments.</p>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+// This is an end-of-line comment
+
+/* This is a block comment
+on multiple lines. */</pre>
+            </code>
+            <p>Block comments in Kotlin can be nested.</p>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+/* The comment starts here
+/* contains a nested comment */
+and ends here. */</pre>
+            </code>
+            <p>Refer here to see more about <a href="https://kotlinlang.org/docs/kotlin-doc.html" target="_blank"> Documenting Kotlin Code</a> (for information on the documentation comment syntax.)</p>
+        
+        </section>
+        <section class="main-section" id="String_templates">
+            <header class="sec-header">
+                <h1>String templates</h1>
+            </header>
+            <p>Package specification should be at the top of the source file.</p>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+fun main() {
+    var a = 1
+    // simple name in template:
+    val s1 = "a is $a" 
+
+    a = 2
+    // arbitrary expression in template:
+    val s2 = "${s1.replace("is", "was")}, but now is $a"
+    println(s2)
+}</pre>
+            </code>
+            <p>Refer here to see more about <a href="https://kotlinlang.org/docs/basic-types.html#string-templates" target="_blank">String templates</a></p>
+        </section>
+        <section class="main-section" id="Conditional_expression">
+            <header class="sec-header">
+                <h1>Conditional expression</h1>
+            </header>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+fun maxOf(a: Int, b: Int): Int {
+    if (a > b) {
+        return a
+    } else {
+        return b
+    }
+}
+
+fun main() {
+    println("max of 0 and 42 is ${maxOf(0, 42)}")
+}</pre>
+            </code>
+            <p>In Kotlin, <span>if</span> can also be used as an expression.</p>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+fun maxOf(a: Int, b: Int) = if (a > b) a else b
+
+fun main() {
+    println("max of 0 and 42 is ${maxOf(0, 42)}")
+}</pre>
+            </code>
+            <p>See <a href="https://kotlinlang.org/docs/control-flow.html#if-expression" target="_blank"><span>if</span> -expression</a></p>
+        </section>
+        <section class="main-section" id="For_loop">
+            <header class="sec-header">
+                <h1>For loop</h1>
+            </header>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+fun main() {
+    val items = listOf("apple", "banana", "kiwifruit")
+    for (item in items) {
+        println(item)
+    }
+}</pre>
+            </code>
+            <p>or</p>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+fun main() {
+    val items = listOf("apple", "banana", "kiwifruit")
+    for (index in items.indices) {
+        println("item at $index is ${items[index]}")
+    }
+}</pre>
+            </code>
+            <p>Refer here to see more about <a href="https://kotlinlang.org/docs/control-flow.html#for-loops" target="_blank">for loop</a></p>
+        </section>
+        <section class="main-section" id="While_loop">
+            <header class="sec-header">
+                <h1>While loop</h1>
+            </header>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+fun main() {
+    val items = listOf("apple", "banana", "kiwifruit")
+    var index = 0
+    while (index < items.size) {
+        println("item at $index is ${items[index]}")
+        index++
+    }
+}</pre>
+            </code>
+            <p>Refer here to see more about <a href="https://kotlinlang.org/docs/control-flow.html#while-loops" target="_blank">while loop</a></p>
+        </section>
+        <section class="main-section" id="When_expression">
+            <header class="sec-header">
+                <h1>When expression</h1>
+            </header>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+fun describe(obj: Any): String =
+    when (obj) {
+        1          -> "One"
+        "Hello"    -> "Greeting"
+        is Long    -> "Long"
+        !is String -> "Not a string"
+        else       -> "Unknown"
+    }
+
+fun main() {
+    println(describe(1))
+    println(describe("Hello"))
+    println(describe(1000L))
+    println(describe(2))
+    println(describe("other"))
+}</pre>
+            </code>
+            <p>Refer here to see more about <a href="https://kotlinlang.org/docs/control-flow.html#when-expression" target="_blank">when expression</a></p>
+        </section>
+        <section class="main-section" id="Ranges">
+            <header class="sec-header">
+                <h1>Ranges</h1>
+            </header>
+            <p>Check if a number is within a range using <span>in</span> operator.</p>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+fun main() {
+    val x = 10
+    val y = 9
+    if (x in 1..y+1) {
+        println("fits in range")
+    }
+}</pre>
+            </code>
+            <p>Check if a number is out of range.</p>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+fun main() {
+    val list = listOf("a", "b", "c")
+
+    if (-1 !in 0..list.lastIndex) {
+        println("-1 is out of range")
+    }
+    if (list.size !in list.indices) {
+        rintln("list size is out of valid list indices range, too")
+    }
+}</pre>
+            </code>
+            <p>Iterate over a range.</p>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+fun main() {
+    for (x in 1..5) {
+        print(x)
+    }
+}</pre>
+            </code>
+            <p>Or over a progression.</p>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+fun main() {
+    for (x in 1..10 step 2) {
+        print(x)
+    }
+    println()
+    for (x in 9 downTo 0 step 3) {
+        print(x)
+    }
+}</pre>
+            </code>
+            <p>Refer here to see more about <a href="https://kotlinlang.org/docs/ranges.html" target="_blank">Ranges and Progressions</a>.</p>
+        </section>
+        <section class="main-section" id="Collections">
+            <header class="sec-header">
+                <h1>Collections</h1>
+            </header>
+            <p>Iterate over a collection.</p>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+fun main() {
+    val items = listOf("apple", "banana", "kiwifruit")
+    for (item in items) {
+    println(item)
+    }
+}</pre>
+            </code>
+            <p>Check if a collection contains an object using <span>in</span> operator.</p>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+fun main() {
+    val items = setOf("apple", "banana", "kiwifruit")
+    when {
+        "orange" in items -> println("juicy")
+        "apple" in items -> println("apple is fine too")
+    }
+}</pre>
+            </code>
+            <p>Using lambda expressions to filter and map collections:</p>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+fun main() {
+    val fruits = listOf("banana", "avocado", "apple", "kiwifruit")
+    fruits
+    .filter { it.startsWith("a") }
+    .sortedBy { it }
+    .map { it.toUpperCase() }
+    .forEach { println(it) }
+}</pre>
+            </code>
+            <p>Refer here to see more about <a href="https://kotlinlang.org/docs/collections-overview.html" target="_blank">Collections overview</a>.</p>
+        </section>
+        <section class="main-section" id="Nullable_values_and_null_checks">
+            <header class="sec-header">
+                <h1>Nullable values and null checks</h1>
+            </header>
+            <p>A reference must be explicitly marked as nullable when <span>null</span> value is possible. Nullable type names have <span>?</span> at the end.</p>
+            <p>Return <span>null</span> if <span>str</span> does not hold and integer:</p>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+fun parseInt(str: String): Int? {
+    // ...
+}</pre>
+            </code>
+            <p>Use a function returning nullable value:</p>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+fun parseInt(str: String): Int? {
+    return str.toIntOrNull()
+}
+
+fun printProduct(arg1: String, arg2: String) {
+    val x = parseInt(arg1)
+    val y = parseInt(arg2)
+
+    // Using `x * y` yields error because they may hold nulls.
+    if (x != null && y != null) {
+        // x and y are automatically cast to non-nullable after null check
+        println(x * y)
+    }
+    else {
+        println("'$arg1' or '$arg2' is not a number")
+    }    
+}
+
+fun main() {
+    printProduct("6", "7")
+    printProduct("a", "7")
+    printProduct("a", "b")
+}</pre>
+            </code>
+            <p>or</p>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+fun parseInt(str: String): Int? {
+    return str.toIntOrNull()
+}
+
+fun printProduct(arg1: String, arg2: String) {
+    val x = parseInt(arg1)
+    val y = parseInt(arg2)
+
+    // ...
+    if (x == null) {
+        println("Wrong number format in arg1: '$arg1'")
+        return
+    }
+    if (y == null) {
+        println("Wrong number format in arg2: '$arg2'")
+        return
+    }
+
+    // x and y are automatically cast to non-nullable after null check
+    println(x * y)
+}
+
+fun main() {
+    printProduct("6", "7")
+    printProduct("a", "7")
+    printProduct("99", "b")
+}</pre>
+            </code>
+            <p>Refer here to see more about <a href="https://kotlinlang.org/docs/collections-overview.html" target="_blank">Null-safety</a>.</p>
+        </section>
+        <section class="main-section" id="Type_Check_and_automatic_casts">
+            <header class="sec-header">
+                <h1>Type Check and automatic casts</h1>
+            </header>
+            <p>The <span>is</span> operator checks if an expression is an instance of a type. If an immutable local variable or property is checked for a specific type, there's no need to cast it explicitly:</p>
+            <p>Return <span>null</span> if <span>str</span> does not hold and integer:</p>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+fun getStringLength(obj: Any): Int? {
+    if (obj is String) {
+        // `obj` is automatically cast to `String` in this branch
+        return obj.length
+    }
+
+    // `obj` is still of type `Any` outside of the type-checked branch
+    return null
+}
+
+fun main() {
+    fun printLength(obj: Any) {
+        println("Getting the length of '$obj'. Result: ${getStringLength(obj) ?: "Error: The object is not a string"} ")
+    }
+    printLength("Incomprehensibilities")
+    printLength(1000)
+    printLength(listOf(Any()))
+}</pre>
+            </code>
+            <p>or</p>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+fun getStringLength(obj: Any): Int? {
+    if (obj !is String) return null
+
+    // `obj` is automatically cast to `String` in this branch
+    return obj.length
+}
+
+fun main() {
+    fun printLength(obj: Any) {
+        println("Getting the length of '$obj'. Result: ${getStringLength(obj) ?: "Error: The object is not a string"} ")
+    }
+    printLength("Incomprehensibilities")
+    printLength(1000)
+    printLength(listOf(Any()))
+}</pre>
+            </code>
+            <p>or even</p>
+            <code>
+                <a class="ktpg" href="https://play.kotlinlang.org/">kt playground</a>
+                <pre>
+fun getStringLength(obj: Any): Int? {
+    // `obj` is automatically cast to `String` on the right-hand side of `&&`
+    if (obj is String && obj.length > 0) {
+        return obj.length
+    }
+
+    return null
+}
+
+    fun main() {
+    fun printLength(obj: Any) {
+        println("Getting the length of '$obj'. Result: ${getStringLength(obj) ?: "Error: The object is not a string"} ")
+    }
+    printLength("Incomprehensibilities")
+    printLength("")
+    printLength(1000)
+}</pre>
+            </code>
+            <p>Refer here to see more about <a href="https://kotlinlang.org/docs/classes.html" target="_blank">Classes</a> <a href="https://kotlinlang.org/docs/typecasts.html" target="_blank">Type Casts</a>.</p>
         </section>
       </main>
 
