@@ -200,7 +200,7 @@ a{
 #main-doc code{
     position: relative;
     width: 100%;
-    margin: 2rem 2rem 0 0;
+    margin: 2rem 2rem 2rem 0;
     padding: .5rem 0 0 0;
     display: block;
     background-color: #a2d2ff;
@@ -227,7 +227,8 @@ a{
 }
 
 #main-doc p{
-  line-height: 2rem;  
+    padding: .2rem 0;
+    line-height: 2.1rem;  
 }
 
 #main-doc p span{
