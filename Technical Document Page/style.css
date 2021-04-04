@@ -336,13 +336,13 @@ a{
 .box{
     display: grid;
     grid-template-columns: 100%;
-    grid-column-gap: 2rem;
+    grid-column-gap: 1rem;
     grid-row-gap: 1rem;
     margin: 1.5rem 0 0 0;
 }
 
 .box a{
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     overflow: hidden !important;
 }
