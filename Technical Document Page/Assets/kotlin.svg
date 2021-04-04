@@ -1,0 +1,66 @@
+<svg
+            style="width: 20px;
+                   height: 20px;"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            role="img"
+            aria-labelledby="LogoTextTitle"
+            class="kt-header__logo"
+            title="Kotlin"      
+        >
+            <path
+            fill="url(#paint0_linear)"
+            d="M9.062 1.009L0 10.539v8.52l9.05-9.066 9-8.985H9.062z"
+            ></path>
+            <path
+            fill="url(#paint1_linear)"
+            d="M9.05 9.993l9 9.065H0l9.049-9.065z"
+            ></path>
+            <path
+            fill="url(#paint2_linear)"
+            d="M9.062 1.009L0 10.539v-9.53h9.062z"
+            ></path>
+            <defs id="defs3005">
+            <linearGradient
+                id="paint0_linear"
+                x1="5.359"
+                x2="22.155"
+                y1="28.002"
+                y2="11.206"
+                gradientTransform="translate(0 -2)"
+                gradientUnits="userSpaceOnUse"
+            >
+                <stop id="stop3008" offset="0.108" stop-color="#C757BC"></stop>
+                <stop id="stop3010" offset="0.173" stop-color="#CD5CA9"></stop>
+                <stop id="stop3012" offset="0.492" stop-color="#E8744F"></stop>
+                <stop id="stop3014" offset="0.716" stop-color="#F88316"></stop>
+                <stop id="stop3016" offset="0.823" stop-color="#FF8900"></stop>
+            </linearGradient>
+            <linearGradient
+                id="paint1_linear"
+                x1="13.922"
+                x2="15.634"
+                y1="23.342"
+                y2="16.553"
+                gradientTransform="translate(0 -2)"
+                gradientUnits="userSpaceOnUse"
+            >
+                <stop id="stop3019" offset="0" stop-color="#00AFFF"></stop>
+                <stop id="stop3021" offset="0.556" stop-color="#5282FF"></stop>
+                <stop id="stop3023" offset="1" stop-color="#945DFF"></stop>
+            </linearGradient>
+            <linearGradient
+                id="paint2_linear"
+                x1="6.791"
+                x2="13.29"
+                y1="16.696"
+                y2="11.376"
+                gradientTransform="translate(0 -2)"
+                gradientUnits="userSpaceOnUse"
+            >
+                <stop id="stop3026" offset="0" stop-color="#00AFFF"></stop>
+                <stop id="stop3028" offset="0.556" stop-color="#5282FF"></stop>
+                <stop id="stop3030" offset="1" stop-color="#945DFF"></stop>
+            </linearGradient>
+            </defs>
+            </svg>
