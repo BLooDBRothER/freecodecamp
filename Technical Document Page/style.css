@@ -75,6 +75,7 @@ a{
 }
 
 .primary-header .logo h1{
+    cursor: pointer;
     font-size: 2.5rem;
     padding: 0 0 0 .5rem;
 }
@@ -341,8 +342,9 @@ a{
 }
 
 .box a{
-    width: fit-content;
+    width: 100%;
     margin: 0 auto;
+    overflow: hidden !important;
 }
 
 .boxes{
@@ -351,17 +353,19 @@ a{
     justify-content: space-around;
     text-align: center;
     padding: 1rem;
-    width: 230px;
     height: 300px;
     border: 2px solid orange;
+    overflow: hidden;
 }
 
 .boxes p{
     color: #f77f00;
+    overflow: hidden;
 }
 
 .boxes h2{
     color: #caffbf;
+    overflow: hidden;
 }
 
 .boxes .box-logo{
@@ -430,6 +434,11 @@ a{
     .box{
         display: grid;
         grid-template-columns: repeat(2, 50%);
+    }
+
+
+    .side-section{
+        padding-bottom: 2rem;
     }
 }
 
