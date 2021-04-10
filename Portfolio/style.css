@@ -1,0 +1,94 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* ---------------------------------------Global Start--------------------------------- */
+
+a{
+    text-decoration: none;
+    color: #e29578;
+}
+
+/* ---------------------------------------Navbar Start--------------------------------- */
+
+.nav{
+    background-color: #006d77;
+    color: #ffddd2;
+    height: 0;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    transition: height .5s ease;
+}
+
+.nav-exp{
+    height: 300px;
+}
+
+.nav .title{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.nav .nav-links{
+    padding-right: 2rem;
+    display: flex;
+    font-size: 1.6rem;
+    height: 100%;
+    font-weight: 600;
+}
+
+.nav .nav-links .nav-link{
+    padding: 0 2rem;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav .nav-links .nav-link:hover{
+    background-color: #e29578;
+    color: #006d77;
+}
+
+.ham-but{
+    position: absolute;
+    font-size: 2rem;
+    right: 10%;
+    top: 20px;
+    display: none;
+    transition: transform .5s ease;
+}
+
+@media (min-width:701px){
+    .nav{
+        height: 80px !important;
+    }
+}
+
+@media (max-width:700px){
+    .nav{
+        display: block;
+    }
+    .nav .nav-links{
+        flex-direction: column;
+        height: initial;
+        padding: .5rem 0;
+    }
+    .nav .nav-links .nav-link{
+        padding: 1rem 2rem;
+    }
+    .ham-but{
+        display: initial;
+    }
+}
