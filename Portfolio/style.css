@@ -62,10 +62,11 @@ a{
 }
 
 .ham-but{
+    
     position: absolute;
     font-size: 2rem;
     right: 10%;
-    top: 20px;
+    top: 0px;
     display: none;
     transition: transform .5s ease;
 }
@@ -89,6 +90,8 @@ a{
         padding: 1rem 2rem;
     }
     .ham-but{
-        display: initial;
+        height: 80px;
+        display: flex;
+        align-items: center;
     }
 }
