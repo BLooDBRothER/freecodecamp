@@ -26,6 +26,7 @@ a{
     width: 100%;
     overflow: hidden;
     transition: height .5s ease;
+    opacity: .8;
 }
 
 .nav-exp{
@@ -71,6 +72,38 @@ a{
     transition: transform .5s ease;
 }
 
+/* ---------------------------------------Welcome-section Start--------------------------------- */
+
+.welcome{
+    height: 100vh;
+    width: 100%;
+    background-image: url('./Assets/abstract_pf3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome h1{
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    color: yellow;
+    backdrop-filter: blur(.6rem);
+    padding: 1rem;
+    text-align: center;
+    margin: .5rem 0;
+}
+
+.welcome h1 span{
+    white-space: nowrap;
+}
+
 @media (min-width:701px){
     .nav{
         height: 80px !important;
@@ -93,5 +126,14 @@ a{
         height: 80px;
         display: flex;
         align-items: center;
+    }
+}
+
+@media (max-width:500px){
+    .nav .title{
+        padding-left: 1rem;
+    }
+    .welcome h1{
+        font-size: 2rem;
     }
 }
