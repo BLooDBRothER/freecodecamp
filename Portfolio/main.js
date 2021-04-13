@@ -22,7 +22,8 @@ $(document).ready(function(){
 $(function () {
     $(document).scroll(function () {
         var $nav = $(".nav");
-        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        var $sec1 = $(".chg");
+        $nav.toggleClass('scrolled', $(this).scrollTop() == $sec1.height());
       });
   });
 
