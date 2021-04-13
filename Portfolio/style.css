@@ -177,6 +177,14 @@ a{
     width: fit-content;
 }
 
+.project-tile:hover .des h1::before{
+    content: '\1F495        ';
+}
+
+.project-tile:hover .des h1::after{
+    content: '      \1F495';
+}
+
 .project-tile .des h1:hover{
     color: red;
 }
