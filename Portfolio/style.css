@@ -30,6 +30,11 @@ a{
     z-index: 2;
 }
 
+.nav.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+  }
+
 .nav-exp{
     height: 300px;
 }
@@ -175,14 +180,17 @@ a{
     padding: 2rem 0;
     margin: 0;
     width: fit-content;
+    font-size: 1.8rem;
 }
 
 .project-tile:hover .des h1::before{
     content: '\1F495        ';
+    font-size: 1.6rem;
 }
 
 .project-tile:hover .des h1::after{
     content: '      \1F495';
+    font-size: 1.6rem;
 }
 
 .project-tile .des h1:hover{
