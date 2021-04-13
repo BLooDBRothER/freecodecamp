@@ -30,11 +30,6 @@ a{
     z-index: 2;
 }
 
-.nav.scrolled {
-    background-color: #fff !important;
-    transition: background-color 200ms linear;
-  }
-
 .nav-exp{
     height: 300px;
 }
