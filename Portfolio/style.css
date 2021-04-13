@@ -1,4 +1,4 @@
-*, *::after, *::before{
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,6 +27,7 @@ a{
     overflow: hidden;
     transition: height .5s ease;
     opacity: .85;
+    z-index: 2;
 }
 
 .nav-exp{
@@ -82,7 +83,7 @@ a{
 .welcome{
     height: 100vh;
     width: 100%;
-    background-image: url('./Assets/abstract_pf6.jpg');
+    background-image: url('./Assets/abstract_pf1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -108,9 +109,96 @@ a{
     white-space: nowrap;
 }
 
+#projects{
+    min-height: 100vh;
+    background: url('./Assets/abstract_pf2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#projects .pr-tit{
+    position: absolute;
+    top: 40px;
+    font-size: 2rem;
+    padding: 2rem 0;
+    color: wheat;
+}
+
+.project{
+    width: 100%;
+}
+
+.cnt{
+    margin: 0 5vw;
+}
+
+.project-tile{  
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width:25vw;
+    text-align: center;
+    margin: 3rem auto;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    
+}
+
+.project-tile .img-cnt{
+    overflow: hidden;
+}
+
+.project-tile img{
+    transition: transform 1s ease-in;
+}
+
+.project-tile img:hover{
+    transform: scale(1.3);
+}
+
+.project-tile .des{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-tile .des h1{
+    padding: 2rem 0;
+    margin: 0;
+    width: fit-content;
+}
+
+.project-tile .des h1:hover{
+    color: red;
+}
+
+.project .des h2 a{
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    color: black;
+    padding: .5rem;
+    border-radius: 1.5rem;
+}
+
+.project .des h2 a:hover{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 @media (min-width:701px){
     .nav{
         height: 80px !important;
+    }
+}
+
+@media (max-width:1000px){
+    .project-tile{  
+        width: 45vw;
     }
 }
 
@@ -139,5 +227,8 @@ a{
     }
     .welcome h1{
         font-size: 2rem;
+    }
+    .project-tile{  
+        width: 70vw;
     }
 }
