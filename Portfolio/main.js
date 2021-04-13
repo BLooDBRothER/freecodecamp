@@ -5,8 +5,8 @@ $(document).ready(function(){
         autoplay: true,
         autoplatTimeout: 3000,
         dots: false,
-        // nav: true,
-        // navText: [$('.owl-nav .owl-nav-prev'), $('.owl-nav .owl-nav-next')],
+        nav: true,
+        navText: [$('.owl-nav .owl-nav-prev'), $('.owl-nav .owl-nav-next')],
         responsiveClass:true,
         responsive:{
             0:{

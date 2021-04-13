@@ -124,7 +124,7 @@ a{
 
 #projects .pr-tit{
     position: absolute;
-    top: 40px;
+    top: 80px;
     font-size: 2rem;
     padding: 2rem 0;
     color: wheat;
@@ -132,6 +132,10 @@ a{
 
 .project{
     width: 100%;
+}
+
+.pr-cnt{
+    padding-top: 6rem;
 }
 
 .cnt{
@@ -191,6 +195,42 @@ a{
 .project .des h2 a:hover{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.owl-nav i{
+    font-size: 2rem;
+}
+
+.owl-nav i:hover{
+    /* color: aqua; */
+    font-size: 2rem;
+    animation: but-color 3s ease infinite;
+}
+
+.owl-theme .owl-nav [class*='owl-']{
+    background: transparent !important;
+}
+
+.owl-theme .owl-nav [class*='owl-']{
+    outline: none !important;
+}
+
+@keyframes but-color{
+    0%{
+        color: #ffadad;
+    }
+    25%{
+        color: #fdffb6;
+    }
+    50%{
+        color: #caffbf;
+    }
+    75%{
+        color: #a0c4ff;
+    }
+    100%{
+        color: #fffffc;
+    }
 }
 
 
