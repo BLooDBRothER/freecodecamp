@@ -1,4 +1,4 @@
-body{
+*, *::after, *::before{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -175,6 +175,10 @@ a{
 
 .project-tile .des h1:hover{
     color: red;
+}
+
+.project .des h2{
+    padding: 2rem 0;
 }
 
 .project .des h2 a{
