@@ -26,9 +26,9 @@
     <header id="navbar" class="nav">
       <div class="title"><h1>My Portfolio</h1></div>
       <div class="nav-links">
-        <a href="#" class="nav-link"><div >Home</div></a>
-        <a href="#" class="nav-link"><div >Project</div></a>
-        <a href="#" class="nav-link"><div >About Me</div></a>
+        <a href="#welcome-section" class="nav-link"><div >Home</div></a>
+        <a href="#projects" class="nav-link"><div >Project</div></a>
+        <a href="#sc" class="nav-link"><div >GitHub</div></a>
       </div>
       <div class="ham-but" id="ham" onclick="toggleopen()"><i class="fas fa-chevron-down"></i></div>
     </header>  
@@ -115,7 +115,7 @@
                 </div>
               </div>
 
-              <div class="project-tile">
+              <div class="project-tile" id="sc">
                 <div class="img-cnt">
                   <img src="./Assets/project/technical-document.png" alt="parallex" width="400px">
                 </div>
@@ -137,7 +137,15 @@
       </section>
     </main>    
 
-    
+    <!-- <footer>
+      <div class="github-footer">Source code at : <a href="" id="profile-link"><i class="fab fa-github"></i></a></div>
+  </footer> -->
+    <footer class="footer">
+      <div>
+        <h1>Source code @ </h1>
+        <a href="https://github.com/BLooDBRothER" target="_blank" id="profile-link"><i class="fab fa-github-alt"></i></a>
+      </div>
+  </footer>
 
     <!--Jquery-->
     <script src="./Jquery.min.js"></script>
@@ -146,6 +154,8 @@
     <script src="./OwlCarousel/owl.carousel.min.js"></script>
 
     <script src="./main.js"></script>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     
   </body>

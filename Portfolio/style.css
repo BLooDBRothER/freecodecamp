@@ -5,6 +5,10 @@
     overflow-x: hidden;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 /* ---------------------------------------Global Start--------------------------------- */
 
 :root{
@@ -17,7 +21,7 @@
 a{
     text-decoration: none;
     color: #fff;
-    font-family: var(--urina);
+    /* font-family: var(--urina); */
 }
 
 /* ---------------------------------------Navbar Start--------------------------------- */
@@ -262,6 +266,67 @@ a{
     }
 }
 
+/* footer{
+    background-color: #000000;
+  }
+
+footer .github-footer{
+    font-size:2rem;
+    text-align: center;
+    color: white;
+    overflow: inherit;
+    padding: 1rem;
+  }
+  footer a{
+    text-decoration: none;
+    color: white;
+    overflow-x: unset !important;
+  }
+  footer i, i::before{
+      overflow-x: unset !important;
+  } */
+
+.footer{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+
+}
+
+.footer div{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.footer div h1{
+    margin-bottom: .15em;
+}
+
+.footer div a{
+    overflow-x: unset !important;
+    color: white;
+    padding:0 0 0 1rem;
+}
+
+.footer div i{
+    color: hotpink;
+}
+
+.footer div i, .footer div i::before{
+    
+    overflow-x: unset !important;
+    font-size: 2.5rem;
+}
+
+.footer div i:hover{
+    color: red;
+}
+
 
 @media (min-width:701px){
     .nav{
@@ -303,5 +368,17 @@ a{
     }
     .project-tile{  
         width: 70vw;
+    }
+
+    .footer div{
+        font-size: .8rem;
+    }
+    
+    .footer div h1{
+        margin-bottom: .15em;
+    }
+
+    .footer div i, .footer div i::before{
+        font-size: 2rem;
     }
 }
